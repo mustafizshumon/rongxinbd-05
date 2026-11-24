@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-label="Temporary local visual placeholder for LADIES">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b3b50"/><stop offset="1" stop-color="#d0ad83"/></linearGradient><pattern id="p" width="42" height="42" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V42" stroke="#fff" stroke-opacity=".09" stroke-width="2"/><path d="M21 0V42" stroke="#fff" stroke-opacity=".045" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="850" fill="url(#g)"/><rect width="1200" height="850" fill="url(#p)"/>
+<circle cx="920" cy="250" r="310" fill="none" stroke="#fff" stroke-opacity=".13" stroke-width="2"/><circle cx="920" cy="250" r="235" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="2"/>
+<path d="M0 690 Q300 560 580 690 T1200 650 V850 H0Z" fill="#061d35" opacity=".24"/><path d="M0 740 Q340 610 650 750 T1200 700" fill="none" stroke="#fff" stroke-opacity=".2" stroke-width="2"/>
+<g fill="#fff"><text x="78" y="690" font-family="Arial,sans-serif" font-size="22" letter-spacing="7" opacity=".72">PRODUCT RANGE</text><text x="76" y="770" font-family="Arial,sans-serif" font-size="52" font-weight="700" letter-spacing="5">LADIES</text></g>
+<path d="M80 620h110" stroke="#d0ad83" stroke-width="5"/></svg>

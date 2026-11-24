@@ -1,0 +1,101 @@
+{
+  "version": "4.0.0",
+  "architecture": "flat-root modular scripts",
+  "modules": [
+    {
+      "name": "hero",
+      "file": "module-hero.js"
+    },
+    {
+      "name": "trust_strip",
+      "file": "module-trust_strip.js"
+    },
+    {
+      "name": "about",
+      "file": "module-about.js"
+    },
+    {
+      "name": "products",
+      "file": "module-products.js"
+    },
+    {
+      "name": "services",
+      "file": "module-services.js"
+    },
+    {
+      "name": "capabilities",
+      "file": "module-capabilities.js"
+    },
+    {
+      "name": "network",
+      "file": "module-network.js"
+    },
+    {
+      "name": "quality",
+      "file": "module-quality.js"
+    },
+    {
+      "name": "markets",
+      "file": "module-markets.js"
+    },
+    {
+      "name": "sustainability",
+      "file": "module-sustainability.js"
+    },
+    {
+      "name": "resources",
+      "file": "module-resources.js"
+    },
+    {
+      "name": "faq",
+      "file": "module-faq.js"
+    },
+    {
+      "name": "why_us",
+      "file": "module-why_us.js"
+    },
+    {
+      "name": "cta_section",
+      "file": "module-cta_section.js"
+    },
+    {
+      "name": "contact",
+      "file": "module-contact.js"
+    }
+  ],
+  "styles": [
+    "style.css",
+    "responsive.css"
+  ],
+  "core_files": [
+    "runtime.js",
+    "data.js",
+    "app.js",
+    "app.jsx"
+  ],
+  "local_image_system": {
+    "registry": "images.js",
+    "assets": [
+      "img-hero-main.svg",
+      "img-hero-detail.svg",
+      "img-about-team.svg",
+      "img-capability-production.svg",
+      "img-product-denim.svg",
+      "img-product-woven.svg",
+      "img-product-shirts.svg",
+      "img-product-knit.svg",
+      "img-product-ladies.svg",
+      "img-product-kids.svg"
+    ],
+    "policy": "No remote image or font dependencies; replace root-level placeholder SVGs with local photographs using the same filenames."
+  },
+  "image_delivery": {
+    "priority": [
+      "repository-root photo",
+      "configured CDN photo",
+      "local designed SVG fallback"
+    ],
+    "fallback_behavior": "Designed SVG is displayed immediately while local/CDN sources are checked; unavailable sources fall back to SVG."
+  },
+  "contact_email": "info@rongxinbd.com"
+}

@@ -1,0 +1,6 @@
+/* RONGXIN module: sustainability. Keep this section isolated from other page modules. */
+window.RongxinModules = window.RongxinModules || {};
+window.RongxinModules.sustainability = function(ctx) {
+  const { A, icon, products, services, capabilities, filter, setFilter, shown, openInquiry, go } = ctx;
+  return       A("section",{id:"sustainability",class:"section module-section sustainability-section"},A("div",{class:"container-wide sustainability-inner"},A("div",{class:"sustainability-visual"},A("img",{src:RongxinImageFallbacks.responsibleMaterials,"data-image-key":"responsibleMaterials",alt:"Natural cotton fibres, yarn and responsibly selected textile materials",loading:"lazy"}),A("span",{},"MATERIALS & RESPONSIBLE SOURCING")),A("div",{},A("div",{class:"eyebrow"},A("span",{class:"eyebrow-line"}),"RESPONSIBLE SOURCING"),A("h2",{},"Thoughtful choices. ",A("em",{},"Transparent conversations.")),A("p",{},"We support buyer-led discussions around material choices, supplier information, product requirements and responsible sourcing expectations. Specific certifications, audit status and sustainability claims are shared only when verified for the relevant facility or order."),A("button",{class:"btn btn-dark",onClick:()=>openInquiry()},"Discuss Responsible Sourcing",icon("arrow-right","w-4 h-4")))));
+};

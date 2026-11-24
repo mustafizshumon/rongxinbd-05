@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "navigation": {
+    "home": true,
+    "about": true,
+    "products": true,
+    "contact": true,
+    "services": true,
+    "capabilities": true,
+    "network": true,
+    "quality": true,
+    "markets": true,
+    "sustainability": true,
+    "resources": true,
+    "faq": true,
+    "why-us": true
+  }
+}

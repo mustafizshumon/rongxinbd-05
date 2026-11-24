@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": null,
+  "categories": {
+    "DENIM": true,
+    "WOVEN": true,
+    "SHIRTS": true,
+    "KNIT": true,
+    "LADIES": true,
+    "KIDS": true
+  }
+}
