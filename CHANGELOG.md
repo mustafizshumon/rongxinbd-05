@@ -1,3 +1,9 @@
+# V5.1.0 — Copy, SEO and noscript improvements
+
+- Rewrote hero, about, products, services and contact copy in plainer, more specific language. No new claims added.
+- Added Organization structured data (JSON-LD) and a noscript fallback with contact details.
+- Layout, images, navigation and Admin tools unchanged.
+
 # V5.0.0 — Approved Dual-Mannequin Hero Artwork
 
 - Set the supplied two-mannequin apparel studio image as the Hero main artwork.

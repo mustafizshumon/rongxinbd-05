@@ -1,4 +1,4 @@
 Rongxin International Trading Company Limited
-Release: V5.0.0
-Release name: Approved Dual-Mannequin Hero Artwork
+Release: V5.1.0
+Release name: Copy, SEO and noscript improvements
 Date: 2026-11-24
