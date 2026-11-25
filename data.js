@@ -9,12 +9,12 @@ const products = [
   {name:"Kids Collection",sub:"Everyday · Denim · Knit",image:RongxinImages.productKids,imageKey:"productKids",tag:"KIDS"}
 ];
 const services = [
-  ["globe-2","Global Sourcing","We match your product, price and timeline to suitable suppliers."],
-  ["layers-3","Product Development","Tech packs, fabric choices, samples and fit approvals, handled together."],
-  ["badge-check","Quality Assurance","Checks during and after production, set against your quality requirements."],
-  ["factory","Factory Coordination","Production planning and regular updates, so nothing is a surprise."],
-  ["package-check","Compliance Support","Help with the documents and responsible-sourcing information buyers ask for."],
-  ["truck","Shipment Coordination","Packing, shipping documents and delivery follow-up."]
+  ["globe-2","Global Sourcing","A responsive supplier network for the right product, price and production route."],
+  ["layers-3","Product Development","From concept and tech pack to material selection, sampling and fit approval."],
+  ["badge-check","Quality Assurance","Quality checkpoints and production follow-up aligned with buyer requirements."],
+  ["factory","Factory Coordination","Production planning, capacity coordination and transparent communication."],
+  ["package-check","Compliance Support","Responsible sourcing and documentation coordination across the supply chain."],
+  ["truck","Shipment Coordination","Packing, shipment documentation and delivery milestone follow-up."]
 ];
 const capabilities = ["Product & supplier sourcing","Fabric, trims and accessories","Sample development & approvals","Merchandising & order follow-up","Inline and final quality coordination","Shipment & export documentation support"];
 function icon(name, cls="icon-fallback") {

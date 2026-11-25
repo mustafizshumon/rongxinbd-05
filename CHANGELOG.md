@@ -1,8 +1,12 @@
-# V5.1.0 — Copy, SEO and noscript improvements
+# V5.1.0 — Fully Local Media & Offline Asset Pack
 
-- Rewrote hero, about, products, services and contact copy in plainer, more specific language. No new claims added.
-- Added Organization structured data (JSON-LD) and a noscript fallback with contact details.
-- Layout, images, navigation and Admin tools unchanged.
+- Removed all Unsplash/CDN image fallback URLs from the runtime image registry.
+- All 12 active photographic slots resolve to bundled root-level WebP files, with bundled local SVG fallbacks.
+- Kept icons as locally rendered text glyphs; no icon CDN or external icon font is loaded.
+- Replaced undeclared web-font family references with local system font stacks; no remote font download is required.
+- Confirmed the site uses local CSS, JavaScript runtime, page modules, logos, PDF and image assets.
+- Kept the website's canonical domain and contact website link; these are normal site URLs, not media dependencies.
+- Preserved website content, layout, navigation, product categories, Admin controls and the approved Hero artwork.
 
 # V5.0.0 — Approved Dual-Mannequin Hero Artwork
 

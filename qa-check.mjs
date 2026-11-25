@@ -20,6 +20,21 @@ for (const file of jsonFiles) {
   catch (error) { fail(`JSON parse: ${file}: ${error.message}`); }
 }
 const imagesText = fs.readFileSync(path.join(root, 'images.js'), 'utf8');
+const registeredPhotos = [...imagesText.matchAll(/file:\s*"([^"]+\.webp)"/g)].map((m) => m[1]);
+if (registeredPhotos.length === 12) pass(`All 12 photo slots use local WebP files`);
+else fail(`Expected 12 local WebP photo slots; found ${registeredPhotos.length}`);
+for (const file of registeredPhotos) {
+  if (fs.existsSync(path.join(root, file))) pass(`Local photo resolves: ${file}`);
+  else fail(`Local photo missing: ${file}`);
+}
+const mediaScanFiles = ['index.html','images.js','style.css','responsive.css','app.js','data.js'];
+const mediaScan = mediaScanFiles.map((file) => fs.readFileSync(path.join(root, file), 'utf8')).join('\n');
+for (const forbiddenHost of ['images.unsplash.com','fonts.googleapis.com','fonts.gstatic.com','cdn.jsdelivr.net','unpkg.com','cdnjs.cloudflare.com','use.fontawesome.com']) {
+  if (!mediaScan.includes(forbiddenHost)) pass(`No external media/CDN dependency: ${forbiddenHost}`);
+  else fail(`External media/CDN dependency remains: ${forbiddenHost}`);
+}
+if (!/cdn\s*:/i.test(imagesText) && !imagesText.includes('https://')) pass('Image registry is local-only');
+else fail('Image registry still contains remote URLs or CDN fields');
 const imageNames = [...imagesText.matchAll(/local:\s*\[([^\]]+)\]/g)]
   .flatMap((match) => [...match[1].matchAll(/["']([^"']+)["']/g)].map((item) => item[1]));
 const primaryImages = [...new Set(imageNames.filter((name) => name.endsWith('.webp') && !name.startsWith('img-')))];

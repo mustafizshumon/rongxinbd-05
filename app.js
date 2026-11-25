@@ -84,7 +84,7 @@ function App(){
 render(App,document.getElementById("app"));
 
 
-// Local-root first, then CDN, then a designed local SVG fallback.
+// Resolve bundled local WebP assets only; use bundled SVG if a photo is missing.
 // Re-run after rendering so filtered product cards are also resolved.
 async function applyRongxinImages(root = document) {
   const nodes = root.querySelectorAll("[data-image-key]");
@@ -92,7 +92,7 @@ async function applyRongxinImages(root = document) {
     const key = node.dataset.imageKey;
     if (!key || node.dataset.imageResolved === "1") return;
     node.dataset.imageResolved = "1";
-    // Paint the designed local fallback immediately, then upgrade to local photo/CDN.
+    // Paint the designed local fallback immediately, then resolve the bundled WebP photo.
     const immediateFallback = window.RongxinImageFallbacks[key];
     if (node.tagName !== "IMG" && immediateFallback) {
       node.style.backgroundImage = `url("${immediateFallback}")`;

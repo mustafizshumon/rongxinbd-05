@@ -1,4 +1,4 @@
 Rongxin International Trading Company Limited
 Release: V5.1.0
-Release name: Copy, SEO and noscript improvements
-Date: 2026-11-24
+Release name: Fully Local Media & Offline Asset Pack
+Date: 2026-11-25

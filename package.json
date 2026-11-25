@@ -2,7 +2,7 @@
   "name": "rongxin-international-corporate-site",
   "version": "5.1.0",
   "private": true,
-  "description": "Premium responsive corporate apparel sourcing website with complete local photography, adaptive navigation and admin-managed categories",
+  "description": "Premium responsive corporate website with bundled local photography, local icons, system fonts and zero external media/CDN dependencies",
   "scripts": {
     "preview": "python3 -m http.server 8000",
     "check": "node qa-check.mjs"

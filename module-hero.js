@@ -8,10 +8,10 @@ window.RongxinModules.hero = function(ctx) {
           A("div",{class:"hero-copy"},
             A("div",{class:"eyebrow eyebrow-light"},A("span",{class:"eyebrow-line"}),"BANGLADESH · GLOBAL REACH"),
             A("h1",{},"Connecting ",A("em",{},"Ideas")," to ",A("em",{},"Apparel")," Excellence."),
-            A("p",{class:"hero-lead"},"We help apparel buyers find the right factory, develop samples, and follow every order through to shipment — from our office in Uttara, Dhaka."),
+            A("p",{class:"hero-lead"},"Your trusted partner in global apparel sourcing — bringing together product development, responsible manufacturing coordination and dependable delivery."),
             A("div",{class:"hero-points"},...["Sourcing & Development","Quality Assurance","Responsible Supply Chain"].map((x,i)=>A("span",{},icon(["handshake","shield-check","leaf"][i],"w-4 h-4 text-gold"),x))),
             A("div",{class:"hero-actions"},A("button",{class:"btn btn-gold",onClick:()=>go("products")},"Explore Products",icon("arrow-up-right","w-4 h-4")),A("button",{class:"btn btn-outline",onClick:()=>openInquiry()},"Talk to Our Team",icon("arrow-right","w-4 h-4"))),
-            A("div",{class:"hero-note"},A("span",{class:"note-dot"}),"One team for sourcing, samples, quality checks and shipping")
+            A("div",{class:"hero-note"},A("span",{class:"note-dot"}),"A sourcing partner built around clarity, quality and long-term relationships")
           ),
           A("div",{class:"hero-visual"},
             A("div",{class:"hero-photo-main image-loading", "data-image-key":"heroMain", "aria-label":"Apparel sourcing and garment production"}),

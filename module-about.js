@@ -11,8 +11,8 @@ window.RongxinModules.about = function(ctx) {
           A("div",{class:"about-copy"},
             A("div",{class:"eyebrow"},A("span",{class:"eyebrow-line"}),"WHO WE ARE"),
             A("h2",{},"A thoughtful link between ",A("em",{},"buyers")," and ",A("em",{},"manufacturing.")),
-            A("p",{},"Rongxin International Trading Company Limited works with apparel buyers from the first brief to the final shipment. We confirm requirements, develop samples, follow production, and coordinate shipping, so you deal with one clear point of contact."),
-            A("p",{},"Our office is in Uttara, Dhaka. We keep communication plain and regular, so buyers always know where an order stands."),
+            A("p",{},"Rongxin International Trading Company Limited supports apparel buyers through a coordinated sourcing journey — from understanding product requirements and developing samples to production follow-up and shipment coordination."),
+            A("p",{},"Based in Uttara, Dhaka, Bangladesh, we aim to make cross-border apparel business more transparent, collaborative and dependable."),
             A("div",{class:"about-values"},A("div",{},icon("target","text-gold"),A("strong",{},"Buyer-focused"),A("small",{},"Requirements first")),A("div",{},icon("network","text-gold"),A("strong",{},"Connected"),A("small",{},"Supplier coordination")),A("div",{},icon("check-circle","text-gold"),A("strong",{},"Accountable"),A("small",{},"Clear follow-through")))
           )
         )

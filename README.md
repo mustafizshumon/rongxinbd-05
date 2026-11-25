@@ -1,4 +1,4 @@
-# RONGXIN International Trading Company Limited — V5.0.0
+# RONGXIN International Trading Company Limited — V5.1.0
 
 Premium responsive corporate website for an apparel sourcing and trading company. The site is a static, no-backend HTML/CSS/Vanilla JavaScript application with a small local rendering runtime.
 
@@ -6,8 +6,9 @@ Premium responsive corporate website for an apparel sourcing and trading company
 - Adaptive header: one clustered navigation row when it fits; accessible compact menu when it does not.
 - Hero, company overview, product range, services, capabilities, supply network, quality workflow, markets, responsible sourcing, buyer resources, FAQ, reasons to work with Rongxin, inquiry CTA and contact.
 - Six product cards with category-matched local photography.
-- Local-first image registry: bundled WebP → optional CDN fallback → designed local SVG fallback.
+- Fully local image registry: bundled WebP → bundled SVG fallback. No remote image CDN is requested.
 - Local PC-only Admin utilities for navigation and product-category visibility in `admin/`.
+- Local glyph icons and system fonts; no icon CDN or web-font CDN is requested.
 - Print stylesheet, responsive layouts, skip link, keyboard focus styles and reduced-motion support.
 
 ## Run locally
@@ -57,3 +58,6 @@ The inquiry form prepares an email using the visitor's configured email applicat
 
 ## Release details
 See `VERSION.txt` and `CHANGELOG.md`.
+
+## Offline media and CDN independence
+All 12 active photo slots are stored as WebP files in the website root. Local SVG fallback illustrations, logos, CSS, JavaScript runtime and page modules are also bundled. Icons are rendered by local JavaScript glyphs. Typography uses system font stacks. The page does not request images, icon packs, stylesheets, scripts or fonts from external CDNs. The canonical Rongxin website URL and contact link remain normal website links.
